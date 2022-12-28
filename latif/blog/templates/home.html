@@ -1,0 +1,16 @@
+<table>
+  <th>nama</th>
+  <th>isi</th>
+  <th>keterangan</th>
+  {% for blog in blogs %}
+  <tr>
+    <th>{{blog.title}}</th>
+    <th>{{blog.body}}</th>
+    <th>{{blog.category}}</th>
+  </tr>
+  {% endfor %}
+  </tr>
+</table>
+<button type="button" class="btn btn-light">
+				<a href="{% url 'data_baru' %}">Tambahkan data</a>
+			</button>
